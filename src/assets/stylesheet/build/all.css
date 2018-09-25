@@ -6366,6 +6366,53 @@ a.text-dark:hover, a.text-dark:focus {
   .dmNavbar .navbar-page-linker.active a {
     color: #ffe180 !important; }
 
+.dmNotification {
+  width: 100%;
+  height: 116px;
+  background-color: #3f5d45;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  @media (max-width: 575.98px) {
+    .dmNotification {
+      flex-direction: column;
+      height: 186px; } }
+  .dmNotification .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px; }
+  .dmNotification .title {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .dmNotification .description {
+    color: #eaf0ed;
+    font-size: 24px;
+    font-weight: 600; }
+  .dmNotification .mail-group {
+    width: 40%;
+    height: 56px; }
+    @media (max-width: 575.98px) {
+      .dmNotification .mail-group {
+        width: 315px; } }
+    .dmNotification .mail-group .input-group-text,
+    .dmNotification .mail-group input,
+    .dmNotification .mail-group .mail-action {
+      height: 100%;
+      border-width: 0;
+      border-radius: 0; }
+  .dmNotification .mail-group .input-group-text,
+  .dmNotification .mail-group input {
+    background-color: #eaf0ed; }
+  .dmNotification .mail-group .input-group-text {
+    padding: 0 20px; }
+  .dmNotification .mail-group .mail-action {
+    background-color: #ffe180;
+    width: 64px; }
+  .dmNotification .mail-icon {
+    color: #3f5d45;
+    font-size: 16px; }
+
 h1,
 h2,
 h3,

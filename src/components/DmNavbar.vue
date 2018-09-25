@@ -5,7 +5,8 @@
                           :icon="['fas', 'bars']"
                           class="collapse-icon"></font-awesome-icon>
       <b-navbar-brand href="#" class="brand-href">
-        <img src="~@/assets/img/material/logo.svg" class="d-inline-block align-top brand-logo">
+        <img  src="~@/assets/img/material/logo.svg"
+              class="align-top brand-logo d-none d-sm-block">
         <img src="~@/assets/img/material/logotype.svg" class="d-inline-block align-top brand-name">
       </b-navbar-brand>
       <font-awesome-icon  :icon="['fas', 'shopping-cart']"
