@@ -1,0 +1,63 @@
+.dmNavbar {
+  nav {
+    padding: 0.5rem $content-normal-padding;
+    @include media-breakpoint-down(xs) {
+      padding: 0.5rem $content-xs-padding;
+    }
+  }
+
+  .brand-href {
+    @include flex_center_center();
+    height: calc(100px - 1rem);
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 8.27px;
+  }
+
+  .brand-name {
+    height: 26.6px;
+  }
+
+  .collapse-icon,
+  .cart-icon {
+    color: $primary-color;
+    font-size: 21px;
+    cursor: pointer;
+  }
+
+  .cart-icon {
+    &.sm-lower {
+      display: none;
+      @include media-breakpoint-down(xs) {
+        display: block;
+      }
+    }
+  }
+
+  .collapse-icon {
+    display: none;
+    @include media-breakpoint-down(xs) {
+      display: block;
+    }
+  }
+
+  .navbar-page-linker {
+    @include flex_center_center();
+    padding: 8px 10px;
+    a {
+      color: $primary-color !important;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 0;
+    }
+
+    &.active {
+      a {
+        color: $focus-color !important;
+      }
+    }
+  }
+}

@@ -6315,5 +6315,71 @@ a.text-dark:hover, a.text-dark:focus {
 .dragable:hover {
   cursor: grab; }
 
-.dragable:hover {
-  cursor: grab; }
+.dmNavbar nav {
+  padding: 0.5rem 3rem; }
+  @media (max-width: 575.98px) {
+    .dmNavbar nav {
+      padding: 0.5rem 2rem; } }
+
+.dmNavbar .brand-href {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100px - 1rem); }
+
+.dmNavbar .brand-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 8.27px; }
+
+.dmNavbar .brand-name {
+  height: 26.6px; }
+
+.dmNavbar .collapse-icon,
+.dmNavbar .cart-icon {
+  color: #3f5d45;
+  font-size: 21px;
+  cursor: pointer; }
+
+.dmNavbar .cart-icon.sm-lower {
+  display: none; }
+  @media (max-width: 575.98px) {
+    .dmNavbar .cart-icon.sm-lower {
+      display: block; } }
+
+.dmNavbar .collapse-icon {
+  display: none; }
+  @media (max-width: 575.98px) {
+    .dmNavbar .collapse-icon {
+      display: block; } }
+
+.dmNavbar .navbar-page-linker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px; }
+  .dmNavbar .navbar-page-linker a {
+    color: #3f5d45 !important;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0; }
+  .dmNavbar .navbar-page-linker.active a {
+    color: #ffe180 !important; }
+
+h1,
+h2,
+h3,
+h4,
+* {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+address,
+dl,
+ol,
+p,
+pre,
+ul {
+  margin-bottom: 0; }
