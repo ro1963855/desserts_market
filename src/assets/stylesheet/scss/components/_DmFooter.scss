@@ -1,0 +1,74 @@
+.dmFooter {
+  width: 100%;
+  position: relative;
+  background-color: $gray-color;
+  padding: $footer-y-padding $footer-x-padding;
+  @include media-breakpoint-down(xs) {
+    padding: 30px;
+  }
+
+  .fotter-logo {
+    width: 171.22px;
+    height: 26.6px;
+    margin-bottom: 115.5px;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 39.5px;
+    }
+  }
+
+  .copy-right,
+  .company-info {
+    font-size: 16px;
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  .company-info {
+    margin-bottom: 30px;
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 37px;
+    }
+
+    p {
+      padding: 5px 0;
+    }
+  }
+
+  .relation-icon {
+    float: left;
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      float: none;
+      margin-bottom: 23px;
+    }
+  }
+
+  .copy-right {
+    @include flex(flex-end, initial);
+    float: right;
+    height: 32px;
+    @include media-breakpoint-down(xs) {
+      float: none;
+      height: auto;
+    }
+  }
+
+  .footer-desc {
+    width: 59.28px;
+    height: 218.69px;
+    position: absolute;
+    top: $footer-y-padding;
+    right: $footer-x-padding;
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+}

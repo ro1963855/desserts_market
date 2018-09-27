@@ -5,7 +5,7 @@
                           :icon="['fas', 'bars']"
                           class="collapse-icon"></font-awesome-icon>
       <b-navbar-brand href="#" class="brand-href">
-        <img  src="~@/assets/img/material/logo.svg"
+        <img  src="~@/assets/img/material/logo-dark.svg"
               class="align-top brand-logo d-none d-sm-block">
         <img src="~@/assets/img/material/logotype.svg" class="d-inline-block align-top brand-name">
       </b-navbar-brand>
@@ -34,7 +34,6 @@ export default {
   props: [],
   data() {
     return {
-      logoSrc: '~assets/img/material/logo.svg',
       currentRouterName: '',
       menus: [
         {
