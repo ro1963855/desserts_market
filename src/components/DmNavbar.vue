@@ -42,11 +42,11 @@ export default {
         },
         {
           name: '甜點',
-          router: { name: '1' },
+          router: { name: 'ProductList' },
         },
         {
           name: '登入',
-          router: { name: '2' },
+          router: { name: 'Login' },
         },
       ],
     };
