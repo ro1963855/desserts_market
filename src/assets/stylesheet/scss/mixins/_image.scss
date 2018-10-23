@@ -1,0 +1,12 @@
+@mixin background_img_cover_center($img_url: null) {
+  @if ($img_url) {
+    background-image: url($img_url);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

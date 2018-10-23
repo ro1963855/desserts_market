@@ -1,0 +1,48 @@
+.dmRecommendCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  writing-mode: vertical-rl;
+  margin-left: 1px;
+  margin-right: 1px;
+  @include flex_center_center();
+  h1 {
+    color: $white;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 5px;
+    z-index: 11;
+  }
+
+  .color-bgc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $primary-color;
+    z-index: 10;
+    opacity: 0.8;
+  }
+
+  .image-bgc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+    filter: blur(5px);
+    @include background_img_cover_center();
+  }
+
+  &.active {
+    .color-bgc {
+      background-color: $focus-color;
+    }
+
+    h1 {
+      color: $primary-color;
+    }
+  }
+}

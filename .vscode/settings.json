@@ -8,4 +8,5 @@
   "prettier.trailingComma": "all",
   "prettier.arrowParens": "always",
   "editor.formatOnSave": true,
+  "html.format.wrapAttributes": "force-expand-multiline"
 }

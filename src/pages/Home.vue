@@ -1,12 +1,17 @@
 <template>
   <div class="home">
+    <dm-introduce/>
   </div>
 </template>
 
 <script>
+import DmIntroduce from '@/components/DmIntroduce';
+
 export default {
   name: 'home',
-  components: {},
+  components: {
+    DmIntroduce,
+  },
   props: [],
   data() {
     return {};
