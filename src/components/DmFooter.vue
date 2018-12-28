@@ -1,6 +1,9 @@
 <template>
   <div class="dmFooter">
-    <img src="~@/assets/img/material/logotype.svg" class="fotter-logo">
+    <img
+      src="~@/assets/img/material/logotype.svg"
+      class="fotter-logo"
+    >
     <div class="company-info">
       <p>07-1234-5678</p>
       <p>sweetaste@email.com</p>
@@ -13,14 +16,17 @@
     <div class="copy-right">
       <p>© 2018 Sweetaste* All Rights Reserved</p>
     </div>
-    <img src="~@/assets/img/material/sm-今天是個吃甜點的好日子.svg" class="footer-desc">
+    <img
+      src="~@/assets/img/material/sm-今天是個吃甜點的好日子.svg"
+      class="footer-desc"
+    >
     <div class="clearfix"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'dmFooter',
+  name: "dmFooter",
   components: {},
   props: [],
   data() {
@@ -40,6 +46,6 @@ export default {
   },
   methods: {
     // foo() {},
-  },
+  }
 };
 </script>

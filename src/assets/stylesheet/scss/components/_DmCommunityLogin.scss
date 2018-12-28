@@ -1,0 +1,26 @@
+$community-height: 350px;
+
+.dmCommunityLogin {
+  width: 100%;
+  background-color: $gray-color;
+  height: $community-height;
+  padding: 40px 30px;
+  text-align: center;
+  .title {
+    font-size: 24px;
+    color: $primary-light-color;
+    margin-bottom: 36px;
+    display: block;
+  }
+
+  .community-item {
+    height: 56px;
+    background-color: $white;
+    margin-bottom: 16px;
+    @include flex_center_center();
+    img {
+      cursor: pointer;
+      height: 22px;
+    }
+  }
+}

@@ -4,8 +4,8 @@
     "../blueprint-templates",
     "./.vscode/blueprint-templates"
   ],
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "none",
   "prettier.arrowParens": "always",
   "editor.formatOnSave": true,
   "vetur.format.defaultFormatter.html": "js-beautify-html",

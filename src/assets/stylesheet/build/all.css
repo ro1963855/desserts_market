@@ -6315,6 +6315,96 @@ a.text-dark:hover, a.text-dark:focus {
 .dragable:hover {
   cursor: grab; }
 
+.productList {
+  padding: 0 3rem 60px; }
+  @media (max-width: 575.98px) {
+    .productList {
+      padding: 0 0 30px 0; } }
+  .productList > .banner {
+    position: relative;
+    width: calc(100vw - 3rem * 2);
+    height: calc((100vw - 3rem * 2) / 2);
+    margin-bottom: 60px;
+    background-image: url("~@/assets/img/dessert/toa-heftiba-470545-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    @media (max-width: 575.98px) {
+      .productList > .banner {
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 0; } }
+    .productList > .banner img {
+      position: absolute;
+      right: 40px;
+      height: 330px;
+      width: 90px; }
+      @media (max-width: 575.98px) {
+        .productList > .banner img {
+          right: 30px;
+          height: 220px;
+          width: 50px; } }
+  .productList > .body {
+    width: 100%;
+    display: flex; }
+    @media (max-width: 575.98px) {
+      .productList > .body {
+        flex-direction: column; } }
+  .productList .menu {
+    width: 300px;
+    color: #fff;
+    font-weight: 600; }
+    @media (max-width: 575.98px) {
+      .productList .menu {
+        width: 100%; } }
+    .productList .menu .menu-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      background-color: #3f5d45; }
+    .productList .menu .product-type {
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      color: #3f5d45;
+      border: 1px solid #eaf0ed;
+      border-top-width: 0;
+      cursor: pointer; }
+      .productList .menu .product-type.active {
+        background-color: #eaf0ed; }
+  .productList .list .dmFoodCard {
+    padding-bottom: 20px; }
+  .productList .dmPagination {
+    height: 60px;
+    margin-top: 10px;
+    float: right; }
+    .productList .dmPagination::after {
+      display: block;
+      clear: both;
+      content: ""; }
+
+.login {
+  padding: 30px 5rem 60px;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 575.98px) {
+    .login {
+      padding: 0; } }
+  .login .dmCommunityLogin {
+    width: 50%; }
+    @media (max-width: 575.98px) {
+      .login .dmCommunityLogin {
+        display: none; } }
+  .login .dmMemberLogin {
+    width: 50%; }
+    @media (max-width: 575.98px) {
+      .login .dmMemberLogin {
+        width: 100%; } }
+
 .dmNavbar nav {
   padding: 0.5rem 3rem; }
   @media (max-width: 575.98px) {
@@ -6745,77 +6835,138 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #3f5d45;
   border-color: #3f5d45; }
 
-.productList {
-  padding: 0 3rem 60px; }
-  @media (max-width: 575.98px) {
-    .productList {
-      padding: 0 0 30px 0; } }
-  .productList > .banner {
-    position: relative;
-    width: calc(100vw - 3rem * 2);
-    height: calc((100vw - 3rem * 2) / 2);
-    margin-bottom: 60px;
-    background-image: url("~@/assets/img/dessert/toa-heftiba-470545-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.dmMemberLogin {
+  width: 100%; }
+  .dmMemberLogin > .form {
+    padding: 0 30px;
+    height: 315px;
+    background-color: #3f5d45; }
     @media (max-width: 575.98px) {
-      .productList > .banner {
-        width: 100%;
-        height: 50vw;
-        margin-bottom: 0; } }
-    .productList > .banner img {
-      position: absolute;
-      right: 40px;
-      height: 330px;
-      width: 90px; }
-      @media (max-width: 575.98px) {
-        .productList > .banner img {
-          right: 30px;
-          height: 220px;
-          width: 50px; } }
-  .productList > .body {
-    width: 100%;
-    display: flex; }
-    @media (max-width: 575.98px) {
-      .productList > .body {
-        flex-direction: column; } }
-  .productList .menu {
-    width: 300px;
+      .dmMemberLogin > .form {
+        height: 431px; } }
+  .dmMemberLogin > .action {
+    height: 65px;
+    background-color: #ffe180; }
+  .dmMemberLogin .title {
+    padding: 40px 0;
+    text-align: center;
     color: #fff;
-    font-weight: 600; }
+    font-size: 36px; }
+  .dmMemberLogin .dm-input {
+    margin-bottom: 13px; }
+    .dmMemberLogin .dm-input input[type="text"] {
+      height: 56px; }
+    .dmMemberLogin .dm-input .icon {
+      font-size: 24px; }
+  .dmMemberLogin .action {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; }
+    .dmMemberLogin .action span {
+      font-weight: 600;
+      color: #3f5d45;
+      font-size: 24px; }
+  .dmMemberLogin .community {
+    display: none;
+    height: 116px;
+    background-color: #eaf0ed;
+    margin: 0 -30px; }
     @media (max-width: 575.98px) {
-      .productList .menu {
-        width: 100%; } }
-    .productList .menu .menu-header {
+      .dmMemberLogin .community {
+        display: block; } }
+    .dmMemberLogin .community ul {
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 65px;
-      background-color: #3f5d45; }
-    .productList .menu .product-type {
-      height: 65px;
-      line-height: 65px;
-      text-align: center;
-      color: #3f5d45;
-      border: 1px solid #eaf0ed;
-      border-top-width: 0;
-      cursor: pointer; }
-      .productList .menu .product-type.active {
-        background-color: #eaf0ed; }
-  .productList .list .dmFoodCard {
-    padding-bottom: 20px; }
-  .productList .dmPagination {
-    height: 60px;
-    margin-top: 10px;
-    float: right; }
-    .productList .dmPagination::after {
-      display: block;
-      clear: both;
-      content: ""; }
+      height: 100%;
+      margin: 0; }
+  .dmMemberLogin .community-item {
+    height: 56px;
+    background-color: #fff;
+    margin-bottom: 0;
+    width: 105px;
+    border-right: 1px solid #eaf0ed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .dmMemberLogin .community-item img {
+      cursor: pointer;
+      height: 22px;
+      width: 74px; }
+  @media (max-width: 575.98px) {
+    .dmMemberLogin .formList {
+      padding-top: 30px; } }
+
+.dmCommunityLogin {
+  width: 100%;
+  background-color: #eaf0ed;
+  height: 350px;
+  padding: 40px 30px;
+  text-align: center; }
+  .dmCommunityLogin .title {
+    font-size: 24px;
+    color: #8da291;
+    margin-bottom: 36px;
+    display: block; }
+  .dmCommunityLogin .community-item {
+    height: 56px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .dmCommunityLogin .community-item img {
+      cursor: pointer;
+      height: 22px; }
+
+.dm-input input[type='text'],
+.dm-input .input-group-text {
+  border-radius: 0; }
+
+.dm-input .input-group-text {
+  background-color: #eaf0ed;
+  color: #3f5d45; }
+
+.dm-input input[type='text'] {
+  border-left-width: 0;
+  background: #eaf0ed; }
+
+.dm-input input[type='checkbox'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: #fff;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #fff;
+  margin-top: 0; }
+
+.dm-input input[type='checkbox']:checked {
+  background: #fff; }
+
+.dm-input input[type='checkbox']:after {
+  content: '';
+  position: relative;
+  left: 32%;
+  top: 3%;
+  width: 40%;
+  height: 80%;
+  border: solid #3f5d45;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none; }
+
+.dm-input input[type='checkbox']:checked:after {
+  display: block; }
+
+.dm-input .form-check-label {
+  color: #fff;
+  font-size: 16px; }
 
 h1,
 h2,

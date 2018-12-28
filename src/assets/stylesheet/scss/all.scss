@@ -4,14 +4,8 @@
 @import 'mixins';
 @import 'utilities';
 @import 'desserts_market';
-@import 'components/DmNavbar';
-@import 'components/DmNotification';
-@import 'components/DmFooter';
-@import 'components/DmIntroduce';
-@import 'components/DmRecommendCard';
-@import 'components/DmFoodCard';
-@import 'components/DmPagination';
-@import 'pages/ProductList';
+@import 'pages';
+@import 'components';
 
 h1,
 h2,

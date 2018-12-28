@@ -1,0 +1,22 @@
+.login {
+  padding: 30px $content-large-padding 60px;
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(xs) {
+    padding: 0;
+  }
+
+  .dmCommunityLogin {
+    width: 50%;
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  .dmMemberLogin {
+    width: 50%;
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+}

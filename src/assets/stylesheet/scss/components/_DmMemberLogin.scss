@@ -1,0 +1,86 @@
+$account-height: 380px;
+$account-action-height: 65px;
+$xs-community-height: 116px;
+
+.dmMemberLogin {
+  width: 100%;
+  > .form {
+    padding: 0 30px;
+    height: $account-height - $account-action-height;
+    background-color: $primary-color;
+    @include media-breakpoint-down(xs) {
+      height: $account-height - $account-action-height + $xs-community-height;
+    }
+  }
+
+  > .action {
+    height: $account-action-height;
+    background-color: $focus-color;
+  }
+
+  .title {
+    padding: 40px 0;
+    text-align: center;
+    color: $white;
+    font-size: 36px;
+  }
+
+  .dm-input {
+    margin-bottom: 13px;
+    input[type="text"] {
+      height: 56px;
+    }
+
+    .icon {
+      font-size: 24px;
+    }
+  }
+
+  .action {
+    cursor: pointer;
+    @include flex_center_center();
+    @include a_unstyle();
+    span {
+      font-weight: 600;
+      color: $primary-color;
+      font-size: 24px;
+    }
+  }
+
+  .community {
+    display: none;
+    height: $xs-community-height;
+    background-color: $gray-color;
+    margin: 0 -30px;
+    @include media-breakpoint-down(xs) {
+      display: block;
+    }
+
+    ul {
+      @include flex_center_center();
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  .community-item {
+    height: 56px;
+    background-color: $white;
+    margin-bottom: 0;
+    width: 105px;
+    border-right: 1px solid $gray-color;
+    @include flex_center_center();
+    text-align: center;
+    img {
+      cursor: pointer;
+      height: 22px;
+      width: 74px;
+    }
+  }
+
+  .formList {
+    @include media-breakpoint-down(xs) {
+      padding-top: 30px;
+    }
+  }
+}

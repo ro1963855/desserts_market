@@ -49,9 +49,9 @@
 
 <script>
 export default {
-  name: 'dmPagination',
+  name: "dmPagination",
   components: {},
-  props: ['totoalPageNumber', 'pageSelected'],
+  props: ["totoalPageNumber", "pageSelected"],
   data() {
     return {};
   },
@@ -76,7 +76,7 @@ export default {
         return;
       }
 
-      vm.$emit('changePage', nextPage);
+      vm.$emit("changePage", nextPage);
     },
     prePage() {
       const vm = this;
@@ -85,8 +85,8 @@ export default {
         return;
       }
 
-      vm.$emit('changePage', prePage);
-    },
-  },
+      vm.$emit("changePage", prePage);
+    }
+  }
 };
 </script>

@@ -9,7 +9,32 @@ img,svg{vertical-align:middle}
 @-ms-viewport{width:device-width}
 button,hr,input{overflow:visible}
 .badge,progress,sub,sup{vertical-align:baseline}
-.dmIntroduce .banner,.dmIntroduce .desc .desc-img{background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}
+.dmIntroduce .banner,.productList>.banner{background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}
+.productList{padding:0 3rem 60px}
+.productList>.banner{position:relative;width:calc(100vw - 3rem * 2);height:calc((100vw - 3rem * 2)/ 2);margin-bottom:60px;background-image:url(~@/assets/img/dessert/toa-heftiba-470545-unsplash.jpg);background-size:cover}
+@media (max-width:575.98px){.productList{padding:0 0 30px}
+.productList>.banner{width:100%;height:50vw;margin-bottom:0}
+}
+.productList>.banner img{position:absolute;right:40px;height:330px;width:90px}
+@media (max-width:575.98px){.productList>.banner img{right:30px;height:220px;width:50px}
+.productList>.body{flex-direction:column}
+}
+.productList>.body{width:100%;display:flex}
+.productList .menu{width:300px;color:#fff;font-weight:600}
+@media (max-width:575.98px){.productList .menu{width:100%}
+}
+.login .dmCommunityLogin,.login .dmMemberLogin{width:50%}
+.productList .menu .menu-header{display:flex;align-items:center;justify-content:center;height:65px;background-color:#3f5d45}
+.productList .menu .product-type{height:65px;line-height:65px;text-align:center;color:#3f5d45;border:1px solid #eaf0ed;border-top-width:0;cursor:pointer}
+.productList .menu .product-type.active{background-color:#eaf0ed}
+.productList .list .dmFoodCard{padding-bottom:20px}
+.productList .dmPagination{height:60px;margin-top:10px;float:right}
+.productList .dmPagination::after{display:block;clear:both;content:""}
+.login{padding:30px 5rem 60px;display:flex;align-items:center}
+@media (max-width:575.98px){.login{padding:0}
+.login .dmCommunityLogin{display:none}
+.login .dmMemberLogin{width:100%}
+}
 .dmNavbar nav{padding:.5rem 3rem}
 .dmNavbar .brand-href{display:flex;align-items:center;justify-content:center;height:calc(100px - 1rem)}
 .dmNavbar .brand-logo{width:40px;height:40px;margin-right:8.27px}
@@ -60,6 +85,7 @@ button,hr,input{overflow:visible}
 .dmFooter .footer-desc{width:59.28px;height:218.69px;position:absolute;top:30px;right:100px}
 .dmIntroduce{padding:0 3rem 60px}
 .dmIntroduce .banner{background-image:url(~@/assets/img/dessert/annie-spratt-133872-unsplash.jpg);background-size:cover;width:calc(100vw - 3rem * 2);height:calc((100vw - 3rem * 2)/ 2)}
+.dmIntroduce .desc .desc-img,.dmRecommendCard .image-bgc{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-repeat:no-repeat;background-position:center center}
 @media (max-width:575.98px){.dmIntroduce{padding:0 0 30px}
 .dmIntroduce .banner{width:100%;height:50vw}
 }
@@ -79,7 +105,6 @@ button,hr,input{overflow:visible}
 .dmIntroduce .desc .desc-lg-word_1{top:-20px;right:0}
 .dmIntroduce .desc .desc-lg-word_2{top:-20px;right:calc(40% + 42px)}
 .dmIntroduce .desc .desc-img{background-size:cover;position:absolute;height:460px;width:40%}
-.dmFoodCard .foodImg,.dmRecommendCard .image-bgc{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-repeat:no-repeat;background-position:center center}
 .dmIntroduce .desc .desc-img-1{top:-20px;left:0}
 @media (max-width:575.98px){.dmIntroduce .desc .desc-sm-word{display:block}
 .dmIntroduce .desc .desc-img{position:relative;display:block;width:100%;height:250px}
@@ -88,6 +113,7 @@ button,hr,input{overflow:visible}
 .dmIntroduce .desc .desc-img-2{top:-20px;right:0}
 .dmIntroduce .desc .desc-content{height:280px;writing-mode:vertical-rl;font-size:16px;font-weight:600;color:#8da291;position:absolute}
 .dmIntroduce .desc .desc-content p{line-height:40px;margin-left:40px}
+address,legend{line-height:inherit}
 @media (max-width:575.98px){.dmIntroduce .desc .desc-img-2{top:0}
 .dmIntroduce .desc .desc-content{position:relative;writing-mode:unset;height:auto}
 .dmIntroduce .desc .desc-content p{margin:0}
@@ -111,7 +137,7 @@ button,hr,input{overflow:visible}
 .dmRecommendCard.active .color-bgc{background-color:#ffe180}
 .dmRecommendCard.active h1{color:#3f5d45}
 .dmFoodCard{width:100%;position:relative}
-.dmFoodCard .foodImg{width:100%;height:0;padding-bottom:100%;background-size:cover}
+.dmFoodCard .foodImg{width:100%;height:0;padding-bottom:100%;background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
 .dmFoodCard .tag{position:absolute;width:36px;height:106px;left:20px;top:0;background-color:#3f5d45;display:flex;align-items:center;justify-content:center}
 .dmFoodCard .tag span{color:#fff;writing-mode:vertical-lr;font-weight:600;letter-spacing:4px}
 .dmFoodCard .like-icon{position:absolute;right:20px;top:20px;font-size:20px;color:#3f5d45}
@@ -122,30 +148,41 @@ button,hr,input{overflow:visible}
 .dmFoodCard .foodBtn{width:100%;height:65px;background-color:#eaf0ed;border:0;font-size:24px;font-weight:900;color:#3f5d45;cursor:pointer}
 .dmPagination .page-link{color:#3f5d45;border-radius:0!important;text-align:center;font-size:20px;width:60px;height:60px;display:flex;align-items:center;justify-content:center}
 .dmPagination .page-item.active .page-link{background-color:#3f5d45;border-color:#3f5d45}
-.productList{padding:0 3rem 60px}
-.productList>.banner{position:relative;width:calc(100vw - 3rem * 2);height:calc((100vw - 3rem * 2)/ 2);margin-bottom:60px;background-image:url(~@/assets/img/dessert/toa-heftiba-470545-unsplash.jpg);background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
-@media (max-width:575.98px){.productList{padding:0 0 30px}
-.productList>.banner{width:100%;height:50vw;margin-bottom:0}
+.dmMemberLogin{width:100%}
+.dmMemberLogin>.form{padding:0 30px;height:315px;background-color:#3f5d45}
+@media (max-width:575.98px){.dmMemberLogin>.form{height:431px}
 }
-.productList>.banner img{position:absolute;right:40px;height:330px;width:90px}
-@media (max-width:575.98px){.productList>.banner img{right:30px;height:220px;width:50px}
-.productList>.body{flex-direction:column}
-}
-.productList>.body{width:100%;display:flex}
-.productList .menu{width:300px;color:#fff;font-weight:600}
-@media (max-width:575.98px){.productList .menu{width:100%}
-}
-.productList .menu .menu-header{display:flex;align-items:center;justify-content:center;height:65px;background-color:#3f5d45}
-article,aside,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}
-.productList .menu .product-type{height:65px;line-height:65px;text-align:center;color:#3f5d45;border:1px solid #eaf0ed;border-top-width:0;cursor:pointer}
-address,legend{line-height:inherit}
-body,caption{text-align:left}
-.productList .menu .product-type.active{background-color:#eaf0ed}
-.productList .list .dmFoodCard{padding-bottom:20px}
-.productList .dmPagination{height:60px;margin-top:10px;float:right}
+.dmMemberLogin>.action{height:65px;background-color:#ffe180}
+.dmMemberLogin .title{padding:40px 0;text-align:center;color:#fff;font-size:36px}
+.dmMemberLogin .dm-input{margin-bottom:13px}
+.dmMemberLogin .dm-input input[type=text]{height:56px}
+.dmMemberLogin .dm-input .icon{font-size:24px}
+.dmMemberLogin .action{cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.dmMemberLogin .action span{font-weight:600;color:#3f5d45;font-size:24px}
+.dmMemberLogin .community{display:none;height:116px;background-color:#eaf0ed;margin:0 -30px}
 dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}
-.productList .dmPagination::after{display:block;clear:both;content:""}
+@media (max-width:575.98px){.dmMemberLogin .community{display:block}
+.dmMemberLogin .formList{padding-top:30px}
+}
+.dmMemberLogin .community ul{display:flex;align-items:center;justify-content:center;height:100%;margin:0}
+.dmMemberLogin .community-item{height:56px;background-color:#fff;margin-bottom:0;width:105px;border-right:1px solid #eaf0ed;display:flex;align-items:center;justify-content:center;text-align:center}
+.dmMemberLogin .community-item img{cursor:pointer;height:22px;width:74px}
+.dmCommunityLogin{width:100%;background-color:#eaf0ed;height:350px;padding:40px 30px;text-align:center}
+body,caption{text-align:left}
+.dmCommunityLogin .title{font-size:24px;color:#8da291;margin-bottom:36px;display:block}
+.dmCommunityLogin .community-item{height:56px;background-color:#fff;margin-bottom:16px;display:flex;align-items:center;justify-content:center}
+address,dl,ol,p,pre,ul{margin-bottom:1rem}
+.dmCommunityLogin .community-item img{cursor:pointer;height:22px}
+.dm-input .input-group-text,.dm-input input[type=text]{border-radius:0}
+.dm-input .input-group-text{background-color:#eaf0ed;color:#3f5d45}
+.dm-input input[type=text]{border-left-width:0;background:#eaf0ed}
+.dm-input input[type=checkbox]{cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;outline:0;background:#fff;height:16px;width:16px;border:1px solid #fff;margin-top:0}
+.dm-input input[type=checkbox]:checked{background:#fff}
+.dropdown-menu,.form-control,.modal-content,.popover{background-clip:padding-box}
+.dm-input input[type=checkbox]:after{content:'';position:relative;left:32%;top:3%;width:40%;height:80%;border:solid #3f5d45;border-width:0 2px 2px 0;transform:rotate(45deg);display:none}
+.dm-input input[type=checkbox]:checked:after,article,aside,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}
 label,output{display:inline-block}
+.dm-input .form-check-label{color:#fff;font-size:16px}
 *,h1,h2,h3,h4{line-height:1;margin:0;padding:0}
 dd,h1,h2,h3,h4,h5,h6,label{margin-bottom:.5rem}
 /*!
@@ -161,10 +198,9 @@ html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-t
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff}
 .text-monospace,code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
 [tabindex="-1"]:focus{outline:0!important}
-dl,ol,p,ul{margin-bottom:1rem}
 abbr[data-original-title],abbr[title]{text-decoration:underline;text-decoration:underline dotted;cursor:help;border-bottom:0}
 .btn:not(:disabled):not(.disabled),.close:not(:disabled):not(.disabled),.navbar-toggler:not(:disabled):not(.disabled),.page-link:not(:disabled):not(.disabled),summary{cursor:pointer}
-address{margin-bottom:1rem;font-style:normal}
+address{font-style:normal}
 ol ol,ol ul,ul ol,ul ul{margin-bottom:0}
 dt{font-weight:700}
 dd{margin-left:0}
@@ -180,7 +216,7 @@ a:hover{color:#0056b3;text-decoration:underline}
 a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none}
 a:not([href]):not([tabindex]):focus{outline:0}
 code,kbd,pre,samp{font-size:1em}
-pre{margin-bottom:1rem;overflow:auto;-ms-overflow-style:scrollbar}
+pre{overflow:auto;-ms-overflow-style:scrollbar}
 img{border-style:none}
 svg{overflow:hidden}
 table{border-collapse:collapse}
@@ -514,7 +550,7 @@ pre code{font-size:inherit;word-break:normal}
 }
 .table-responsive{display:block;width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar}
 .collapsing,.modal-open,.progress{overflow:hidden}
-.form-control{display:block;width:100%;height:calc(2.25rem + 2px);padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;background-clip:padding-box;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.form-control{display:block;width:100%;height:calc(2.25rem + 2px);padding:.375rem .75rem;font-size:1rem;line-height:1.5;color:#495057;background-color:#fff;border:1px solid #ced4da;border-radius:.25rem;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
 @media screen and (prefers-reduced-motion:reduce){.form-control{transition:none}
 }
 .form-control::-ms-expand{background-color:transparent;border:0}
@@ -686,7 +722,7 @@ a.btn.disabled,fieldset:disabled a.btn{pointer-events:none}
 }
 .dropdown-toggle::after{display:inline-block;margin-left:.255em;border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}
 .dropdown-toggle:empty::after{margin-left:0}
-.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}
+.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:10rem;padding:.5rem 0;margin:.125rem 0 0;font-size:1rem;color:#212529;text-align:left;background-color:#fff;border:1px solid rgba(0,0,0,.15);border-radius:.25rem}
 .dropdown-menu-right{right:0;left:auto}
 .dropup .dropdown-menu{top:auto;bottom:100%;margin-top:0;margin-bottom:.125rem}
 .dropup .dropdown-toggle::after{display:inline-block;margin-left:.255em;border-top:0;border-right:.3em solid transparent;border-bottom:.3em solid;border-left:.3em solid transparent}
@@ -1097,7 +1133,7 @@ button.close{padding:0;background-color:transparent;border:0;-webkit-appearance:
 .modal.show .modal-dialog{transform:translate(0,0)}
 .modal-dialog-centered{display:flex;align-items:center;min-height:calc(100% - (.5rem * 2))}
 .modal-dialog-centered::before{display:block;height:calc(100vh - (.5rem * 2))}
-.modal-content{position:relative;display:flex;flex-direction:column;width:100%;pointer-events:auto;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0}
+.modal-content{position:relative;display:flex;flex-direction:column;width:100%;pointer-events:auto;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:.3rem;outline:0}
 .modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000}
 .modal-backdrop.fade{opacity:0}
 .modal-backdrop.show{opacity:.5}
@@ -1134,7 +1170,7 @@ button.close{padding:0;background-color:transparent;border:0;-webkit-appearance:
 .bs-tooltip-auto[x-placement^=left] .arrow,.bs-tooltip-left .arrow{right:0;width:.4rem;height:.8rem}
 .bs-tooltip-auto[x-placement^=left] .arrow::before,.bs-tooltip-left .arrow::before{left:0;border-width:.4rem 0 .4rem .4rem;border-left-color:#000}
 .tooltip-inner{max-width:200px;padding:.25rem .5rem;color:#fff;text-align:center;background-color:#000;border-radius:.25rem}
-.popover{top:0;left:0;z-index:1060;max-width:276px;text-align:left;text-align:start;background-color:#fff;background-clip:padding-box;border:1px solid rgba(0,0,0,.2);border-radius:.3rem}
+.popover{top:0;left:0;z-index:1060;max-width:276px;text-align:left;text-align:start;background-color:#fff;border:1px solid rgba(0,0,0,.2);border-radius:.3rem}
 .popover .arrow{width:1rem;height:.5rem;margin:0 .3rem}
 .popover .arrow::after,.popover .arrow::before{border-color:transparent;border-style:solid}
 .bs-popover-auto[x-placement^=top],.bs-popover-top{margin-bottom:.5rem}

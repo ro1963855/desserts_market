@@ -42,15 +42,15 @@
 </template>
 
 <script>
-import DmFoodCard from '@/components/DmFoodCard';
-import DmPagination from '@/components/DmPagination';
-import foodData from '@/data/productList/food';
+import DmFoodCard from "@/components/DmFoodCard";
+import DmPagination from "@/components/DmPagination";
+import foodData from "@/data/productList/food";
 
 export default {
-  name: 'productList',
+  name: "productList",
   components: {
     DmFoodCard,
-    DmPagination,
+    DmPagination
   },
   props: [],
   data() {
@@ -58,7 +58,7 @@ export default {
       productlist: foodData.productlist,
       productTypeSelected: 0,
       pageSelected: 1,
-      perPageItemNumber: 6,
+      perPageItemNumber: 6
     };
   },
   created() {},
@@ -72,9 +72,9 @@ export default {
     totoalPageNumber() {
       return Math.ceil(
         this.productlist[this.productTypeSelected].data.length /
-          this.perPageItemNumber,
+          this.perPageItemNumber
       );
-    },
+    }
   },
   watch: {
     // variable(new, old) {}
@@ -93,7 +93,7 @@ export default {
       const vm = this;
       vm.pageSelected = val;
       window.scrollTo(0, vm.$refs.list.offsetTop - 30);
-    },
-  },
+    }
+  }
 };
 </script>

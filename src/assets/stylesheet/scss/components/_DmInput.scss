@@ -1,0 +1,55 @@
+.dm-input {
+  input[type='text'],
+  .input-group-text {
+    border-radius: 0;
+  }
+
+  .input-group-text {
+    background-color: $primary-bg-color;
+    color: $primary-color;
+  }
+
+  input[type='text'] {
+    border-left-width: 0;
+    background: $primary-bg-color;
+  }
+
+  input[type='checkbox'] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: $white;
+    height: 16px;
+    width: 16px;
+    border: 1px solid $white;
+    margin-top: 0;
+  }
+
+  input[type='checkbox']:checked {
+    background: $white;
+  }
+
+  input[type='checkbox']:after {
+    content: '';
+    position: relative;
+    left: 32%;
+    top: 3%;
+    width: 40%;
+    height: 80%;
+    border: solid $primary-color;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+  }
+
+  input[type='checkbox']:checked:after {
+    display: block;
+  }
+
+  .form-check-label {
+    color: $white;
+    font-size: 16px;
+  }
+}

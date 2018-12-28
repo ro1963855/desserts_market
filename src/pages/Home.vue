@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-    <dm-introduce/>
+    <dm-introduce />
   </div>
 </template>
 
 <script>
-import DmIntroduce from '@/components/DmIntroduce';
+import DmIntroduce from "@/components/DmIntroduce";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
-    DmIntroduce,
+    DmIntroduce
   },
   props: [],
   data() {
@@ -30,6 +30,6 @@ export default {
   },
   methods: {
     // foo() {},
-  },
+  }
 };
 </script>

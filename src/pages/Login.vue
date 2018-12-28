@@ -1,12 +1,20 @@
 <template>
   <div class="login">
+    <dm-member-login />
+    <dm-community-login />
   </div>
 </template>
 
 <script>
+import DmMemberLogin from "@/components/DmMemberLogin";
+import DmCommunityLogin from "@/components/DmCommunityLogin";
+
 export default {
-  name: 'login',
-  components: {},
+  name: "login",
+  components: {
+    DmMemberLogin,
+    DmCommunityLogin
+  },
   props: [],
   data() {
     return {};
@@ -25,6 +33,6 @@ export default {
   },
   methods: {
     // foo() {},
-  },
+  }
 };
 </script>

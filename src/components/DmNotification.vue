@@ -1,17 +1,29 @@
 <template>
   <div class="dmNotification">
     <div class="title">
-      <img src="~@/assets/img/material/logo-light.svg" class="logo">
+      <img
+        src="~@/assets/img/material/logo-light.svg"
+        class="logo"
+      >
       <p class="description">訂閱你我的甜蜜郵件</p>
     </div>
     <b-input-group class="mail-group">
       <b-input-group-prepend is-text>
-          <font-awesome-icon :icon="['fas', 'envelope']" class="mail-icon"></font-awesome-icon>
+        <font-awesome-icon
+          :icon="['fas', 'envelope']"
+          class="mail-icon"
+        ></font-awesome-icon>
       </b-input-group-prepend>
-      <b-form-input type="text" aria-label="Text input with checkbox" />
+      <b-form-input
+        type="text"
+        aria-label="Text input with checkbox"
+      />
       <b-input-group-append>
         <b-btn class="mail-action">
-          <font-awesome-icon :icon="['fas', 'arrow-right']" class="mail-icon"></font-awesome-icon>
+          <font-awesome-icon
+            :icon="['fas', 'arrow-right']"
+            class="mail-icon"
+          ></font-awesome-icon>
         </b-btn>
       </b-input-group-append>
     </b-input-group>
@@ -20,7 +32,7 @@
 
 <script>
 export default {
-  name: 'dmNotification',
+  name: "dmNotification",
   components: {},
   props: [],
   data() {
@@ -40,6 +52,6 @@ export default {
   },
   methods: {
     // foo() {},
-  },
+  }
 };
 </script>
