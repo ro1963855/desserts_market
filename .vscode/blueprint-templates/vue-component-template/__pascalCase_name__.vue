@@ -4,8 +4,10 @@
 </template>
 
 <script>
+// import ComponetName from "@/components/ComponetName";
+
 export default {
-  name: '{{ camelCase name }}',
+  name: "{{ camelCase name }}",
   components: {},
   props: [],
   data() {
@@ -25,6 +27,6 @@ export default {
   },
   methods: {
     // foo() {},
-  },
+  }
 };
 </script>

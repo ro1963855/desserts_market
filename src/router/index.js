@@ -3,6 +3,7 @@ import Router from "vue-router";
 import Home from "@/pages/Home";
 import ProductList from "@/pages/ProductList";
 import Login from "@/pages/Login";
+import Cart from "@/pages/Cart";
 
 Vue.use(Router);
 
@@ -23,6 +24,11 @@ export default new Router({
       path: "/login",
       name: "Login",
       component: Login
+    },
+    {
+      path: "/cart",
+      name: "Cart",
+      component: Cart
     }
   ]
 });

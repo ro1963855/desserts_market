@@ -1,0 +1,8 @@
+.subtitle-column {
+  height: $card-normal-height;
+  background-color: $gray-color;
+  @include flex_center_center();
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 24px;
+}

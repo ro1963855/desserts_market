@@ -6922,6 +6922,126 @@ a.text-dark:hover, a.text-dark:focus {
       cursor: pointer;
       height: 22px; }
 
+.dmCartCardList .card-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaf0ed; }
+  .dmCartCardList .card-body:last-child {
+    border-bottom: 0; }
+
+.dmCartCardList .product-img {
+  height: 110px;
+  width: 110px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  @media (max-width: 575.98px) {
+    .dmCartCardList .product-img {
+      height: 106px;
+      width: 157px; } }
+
+.dmCartCardList .card-desc,
+.dmCartCardList .card-total-price {
+  color: #3f5d45;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .dmCartCardList .card-desc p,
+  .dmCartCardList .card-total-price p {
+    margin: 0 0 3px 0; }
+
+.dmCartCardList .card-total-price-bottom {
+  color: #3f5d45;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #eaf0ed;
+  margin-top: 1rem; }
+
+.dmCartCardList .card-number-counter {
+  align-items: center;
+  width: 144px; }
+  .dmCartCardList .card-number-counter button {
+    height: 48px;
+    width: 48px;
+    border-radius: 0;
+    background-color: #fff;
+    border-color: #eaf0ed;
+    color: #3f5d45;
+    font-size: 16px; }
+  .dmCartCardList .card-number-counter input {
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    border-color: #eaf0ed;
+    color: #3f5d45;
+    font-size: 16px; }
+
+.dmCartCardList .delet-icon {
+  font-size: 24px;
+  color: #3f5d45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+.cart {
+  padding: 0 3rem 60px; }
+  @media (max-width: 991.98px) {
+    .cart {
+      padding: 0; } }
+
+.dmCartSummary .sumary-detail {
+  padding: 16px;
+  background-color: #3f5d45;
+  width: 100%; }
+  @media (max-width: 767.98px) {
+    .dmCartSummary .sumary-detail {
+      background-color: #fff; } }
+
+.dmCartSummary .summary-title {
+  color: #eaf0ed;
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid #eaf0ed;
+  padding-bottom: 16px;
+  text-align: center; }
+
+.dmCartSummary .summary-pay-list {
+  margin-top: 16px; }
+
+.dmCartSummary .sub-desc {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #eaf0ed; }
+  @media (max-width: 767.98px) {
+    .dmCartSummary .sub-desc {
+      color: #3f5d45; } }
+
+.dmCartSummary .main-desc {
+  font-size: 20px;
+  font-weight: bold;
+  color: #eaf0ed; }
+  @media (max-width: 767.98px) {
+    .dmCartSummary .main-desc {
+      color: #3f5d45; } }
+
+.dmCartSummary .checkout-action {
+  background-color: #ffe180;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 24px;
+  color: #3f5d45;
+  font-weight: bold;
+  cursor: pointer; }
+
 .dm-input input[type='text'],
 .dm-input .input-group-text {
   border-radius: 0; }
@@ -6967,6 +7087,22 @@ a.text-dark:hover, a.text-dark:focus {
 .dm-input .form-check-label {
   color: #fff;
   font-size: 16px; }
+
+.layout_container {
+  padding: 0 3rem 60px; }
+  @media (max-width: 575.98px) {
+    .layout_container {
+      padding: 0 0 30px 0; } }
+
+.subtitle-column {
+  height: 65px;
+  background-color: #eaf0ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3f5d45;
+  font-weight: 700;
+  font-size: 24px; }
 
 h1,
 h2,

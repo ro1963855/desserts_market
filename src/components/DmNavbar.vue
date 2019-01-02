@@ -41,10 +41,12 @@
           >{{menu.name}}</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
-      <font-awesome-icon
-        :icon="['fas', 'shopping-cart']"
-        class="cart-icon d-none d-sm-block"
-      ></font-awesome-icon>
+      <router-link :to="{ name: 'Cart'}">
+        <font-awesome-icon
+          :icon="['fas', 'shopping-cart']"
+          class="cart-icon d-none d-sm-block"
+        ></font-awesome-icon>
+      </router-link>
     </b-navbar>
   </div>
 </template>

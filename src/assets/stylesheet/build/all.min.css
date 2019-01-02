@@ -7,11 +7,10 @@
 img,svg{vertical-align:middle}
 *,.dropdown-menu,.nav,.navbar-nav,h1,h2,h3,h4{list-style:none}
 @-ms-viewport{width:device-width}
-button,hr,input{overflow:visible}
 .badge,progress,sub,sup{vertical-align:baseline}
-.dmIntroduce .banner,.productList>.banner{background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}
 .productList{padding:0 3rem 60px}
-.productList>.banner{position:relative;width:calc(100vw - 3rem * 2);height:calc((100vw - 3rem * 2)/ 2);margin-bottom:60px;background-image:url(~@/assets/img/dessert/toa-heftiba-470545-unsplash.jpg);background-size:cover}
+.productList>.banner{position:relative;width:calc(100vw - 3rem * 2);height:calc((100vw - 3rem * 2)/ 2);margin-bottom:60px;background-image:url(~@/assets/img/dessert/toa-heftiba-470545-unsplash.jpg);background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+.dmIntroduce .banner,.dmIntroduce .desc .desc-img{background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover}
 @media (max-width:575.98px){.productList{padding:0 0 30px}
 .productList>.banner{width:100%;height:50vw;margin-bottom:0}
 }
@@ -85,7 +84,6 @@ button,hr,input{overflow:visible}
 .dmFooter .footer-desc{width:59.28px;height:218.69px;position:absolute;top:30px;right:100px}
 .dmIntroduce{padding:0 3rem 60px}
 .dmIntroduce .banner{background-image:url(~@/assets/img/dessert/annie-spratt-133872-unsplash.jpg);background-size:cover;width:calc(100vw - 3rem * 2);height:calc((100vw - 3rem * 2)/ 2)}
-.dmIntroduce .desc .desc-img,.dmRecommendCard .image-bgc{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-repeat:no-repeat;background-position:center center}
 @media (max-width:575.98px){.dmIntroduce{padding:0 0 30px}
 .dmIntroduce .banner{width:100%;height:50vw}
 }
@@ -105,6 +103,7 @@ button,hr,input{overflow:visible}
 .dmIntroduce .desc .desc-lg-word_1{top:-20px;right:0}
 .dmIntroduce .desc .desc-lg-word_2{top:-20px;right:calc(40% + 42px)}
 .dmIntroduce .desc .desc-img{background-size:cover;position:absolute;height:460px;width:40%}
+.dmFoodCard .foodImg,.dmRecommendCard .image-bgc{-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-repeat:no-repeat;background-position:center center}
 .dmIntroduce .desc .desc-img-1{top:-20px;left:0}
 @media (max-width:575.98px){.dmIntroduce .desc .desc-sm-word{display:block}
 .dmIntroduce .desc .desc-img{position:relative;display:block;width:100%;height:250px}
@@ -113,7 +112,6 @@ button,hr,input{overflow:visible}
 .dmIntroduce .desc .desc-img-2{top:-20px;right:0}
 .dmIntroduce .desc .desc-content{height:280px;writing-mode:vertical-rl;font-size:16px;font-weight:600;color:#8da291;position:absolute}
 .dmIntroduce .desc .desc-content p{line-height:40px;margin-left:40px}
-address,legend{line-height:inherit}
 @media (max-width:575.98px){.dmIntroduce .desc .desc-img-2{top:0}
 .dmIntroduce .desc .desc-content{position:relative;writing-mode:unset;height:auto}
 .dmIntroduce .desc .desc-content p{margin:0}
@@ -137,7 +135,7 @@ address,legend{line-height:inherit}
 .dmRecommendCard.active .color-bgc{background-color:#ffe180}
 .dmRecommendCard.active h1{color:#3f5d45}
 .dmFoodCard{width:100%;position:relative}
-.dmFoodCard .foodImg{width:100%;height:0;padding-bottom:100%;background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+.dmFoodCard .foodImg{width:100%;height:0;padding-bottom:100%;background-size:cover}
 .dmFoodCard .tag{position:absolute;width:36px;height:106px;left:20px;top:0;background-color:#3f5d45;display:flex;align-items:center;justify-content:center}
 .dmFoodCard .tag span{color:#fff;writing-mode:vertical-lr;font-weight:600;letter-spacing:4px}
 .dmFoodCard .like-icon{position:absolute;right:20px;top:20px;font-size:20px;color:#3f5d45}
@@ -160,7 +158,6 @@ address,legend{line-height:inherit}
 .dmMemberLogin .action{cursor:pointer;display:flex;align-items:center;justify-content:center;text-decoration:none}
 .dmMemberLogin .action span{font-weight:600;color:#3f5d45;font-size:24px}
 .dmMemberLogin .community{display:none;height:116px;background-color:#eaf0ed;margin:0 -30px}
-dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}
 @media (max-width:575.98px){.dmMemberLogin .community{display:block}
 .dmMemberLogin .formList{padding-top:30px}
 }
@@ -168,11 +165,39 @@ dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}
 .dmMemberLogin .community-item{height:56px;background-color:#fff;margin-bottom:0;width:105px;border-right:1px solid #eaf0ed;display:flex;align-items:center;justify-content:center;text-align:center}
 .dmMemberLogin .community-item img{cursor:pointer;height:22px;width:74px}
 .dmCommunityLogin{width:100%;background-color:#eaf0ed;height:350px;padding:40px 30px;text-align:center}
-body,caption{text-align:left}
 .dmCommunityLogin .title{font-size:24px;color:#8da291;margin-bottom:36px;display:block}
 .dmCommunityLogin .community-item{height:56px;background-color:#fff;margin-bottom:16px;display:flex;align-items:center;justify-content:center}
-address,dl,ol,p,pre,ul{margin-bottom:1rem}
 .dmCommunityLogin .community-item img{cursor:pointer;height:22px}
+.dmCartCardList .card-body{display:flex;justify-content:space-between;padding:20px 0;border-bottom:1px solid #eaf0ed}
+.dmCartCardList .card-body:last-child{border-bottom:0}
+.dmCartCardList .product-img{height:110px;width:110px;background-repeat:no-repeat;background-position:center center;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+@media (max-width:575.98px){.dmCartCardList .product-img{height:106px;width:157px}
+}
+.dmCartCardList .card-desc,.dmCartCardList .card-total-price{color:#3f5d45;font-weight:400;font-size:20px;display:flex;flex-direction:column;justify-content:center}
+.dmCartCardList .card-desc p,.dmCartCardList .card-total-price p{margin:0 0 3px}
+address,dl,ol,p,pre,ul{margin-bottom:1rem}
+.dmCartCardList .card-total-price-bottom{color:#3f5d45;font-weight:700;font-size:20px;border-bottom:1px solid #eaf0ed;margin-top:1rem}
+.dmCartCardList .card-number-counter{align-items:center;width:144px}
+.dmCartCardList .card-number-counter button{height:48px;width:48px;border-radius:0;background-color:#fff;border-color:#eaf0ed;color:#3f5d45;font-size:16px}
+.dmCartCardList .card-number-counter input{height:48px;width:48px;text-align:center;border-color:#eaf0ed;color:#3f5d45;font-size:16px}
+.dmCartCardList .delet-icon{font-size:24px;color:#3f5d45;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.cart{padding:0 3rem 60px}
+@media (max-width:991.98px){.cart{padding:0}
+}
+.dmCartSummary .sumary-detail{padding:16px;background-color:#3f5d45;width:100%}
+.dmCartSummary .summary-title{color:#eaf0ed;font-weight:700;font-size:24px;border-bottom:1px solid #eaf0ed;padding-bottom:16px;text-align:center}
+.dmCartSummary .summary-pay-list{margin-top:16px}
+dl,h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}
+.dmCartSummary .sub-desc{font-weight:lighter;font-size:16px;color:#eaf0ed}
+@media (max-width:767.98px){.dmCartSummary .sumary-detail{background-color:#fff}
+.dmCartSummary .sub-desc{color:#3f5d45}
+}
+.dmCartSummary .main-desc{font-size:20px;font-weight:700;color:#eaf0ed}
+@media (max-width:767.98px){.dmCartSummary .main-desc{color:#3f5d45}
+}
+.dmCartSummary .checkout-action{background-color:#ffe180;height:65px;line-height:65px;text-align:center;font-size:24px;color:#3f5d45;font-weight:700;cursor:pointer}
+address,legend{line-height:inherit}
+body,caption{text-align:left}
 .dm-input .input-group-text,.dm-input input[type=text]{border-radius:0}
 .dm-input .input-group-text{background-color:#eaf0ed;color:#3f5d45}
 .dm-input input[type=text]{border-left-width:0;background:#eaf0ed}
@@ -180,9 +205,14 @@ address,dl,ol,p,pre,ul{margin-bottom:1rem}
 .dm-input input[type=checkbox]:checked{background:#fff}
 .dropdown-menu,.form-control,.modal-content,.popover{background-clip:padding-box}
 .dm-input input[type=checkbox]:after{content:'';position:relative;left:32%;top:3%;width:40%;height:80%;border:solid #3f5d45;border-width:0 2px 2px 0;transform:rotate(45deg);display:none}
-.dm-input input[type=checkbox]:checked:after,article,aside,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}
-label,output{display:inline-block}
+.dm-input input[type=checkbox]:checked:after{display:block}
 .dm-input .form-check-label{color:#fff;font-size:16px}
+.layout_container{padding:0 3rem 60px}
+@media (max-width:575.98px){.layout_container{padding:0 0 30px}
+}
+.subtitle-column{height:65px;background-color:#eaf0ed;display:flex;align-items:center;justify-content:center;color:#3f5d45;font-weight:700;font-size:24px}
+article,aside,figcaption,figure,footer,header,hgroup,legend,main,nav,section{display:block}
+label,output{display:inline-block}
 *,h1,h2,h3,h4{line-height:1;margin:0;padding:0}
 dd,h1,h2,h3,h4,h5,h6,label{margin-bottom:.5rem}
 /*!
@@ -225,6 +255,7 @@ th{text-align:inherit}
 button{border-radius:0}
 button:focus{outline:dotted 1px;outline:-webkit-focus-ring-color auto 5px}
 button,input,optgroup,select,textarea{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}
+button,input{overflow:visible}
 button,select{text-transform:none}
 [type=submit],[type=reset],button,html [type=button]{-webkit-appearance:button}
 [type=submit]::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}
@@ -256,7 +287,7 @@ template{display:none}
 .display-2{font-size:5.5rem}
 .display-3{font-size:4.5rem}
 .display-4{font-size:3.5rem}
-hr{box-sizing:content-box;height:0;margin-top:1rem;border:0;border-top:1px solid rgba(0,0,0,.1)}
+hr{box-sizing:content-box;height:0;overflow:visible;margin-top:1rem;border:0;border-top:1px solid rgba(0,0,0,.1)}
 .img-fluid,.img-thumbnail{max-width:100%;height:auto}
 .small,small{font-size:80%;font-weight:400}
 .mark,mark{padding:.2em;background-color:#fcf8e3}

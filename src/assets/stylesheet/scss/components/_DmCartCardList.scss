@@ -1,0 +1,73 @@
+.dmCartCardList {
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid $gray-color;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .product-img {
+    height: 110px;
+    width: 110px;
+    @include background_img_cover_center();
+    @include media-breakpoint-down(xs) {
+      height: 106px;
+      width: 157px;
+    }
+  }
+
+  .card-desc,
+  .card-total-price {
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      margin: 0 0 3px 0;
+    }
+  }
+
+  .card-total-price-bottom {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid $gray-color;
+    margin-top: 1rem;
+  }
+
+  .card-number-counter {
+    align-items: center;
+    width: 144px;
+    button {
+      height: 48px;
+      width: 48px;
+      border-radius: 0;
+      background-color: $white;
+      border-color: $primary-bg-color;
+      color: $primary-color;
+      font-size: 16px;
+    }
+
+    input {
+      height: 48px;
+      width: 48px;
+      text-align: center;
+      border-color: $primary-bg-color;
+      color: $primary-color;
+      font-size: 16px;
+    }
+  }
+
+  .delet-icon {
+    font-size: 24px;
+    color: $primary-color;
+    @include flex_center_center();
+    cursor: pointer;
+  }
+}

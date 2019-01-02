@@ -1,11 +1,13 @@
-@import 'node_modules/bootstrap/scss/_functions';
-@import 'bootstrap_variables_customer';
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'mixins';
-@import 'utilities';
-@import 'desserts_market';
-@import 'pages';
-@import 'components';
+@import "node_modules/bootstrap/scss/_functions";
+@import "bootstrap_variables_customer";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "mixins";
+@import "utilities";
+@import "desserts_market";
+@import "pages";
+@import "components";
+@import "layout";
+@import "title";
 
 h1,
 h2,

@@ -1,0 +1,59 @@
+.cart {
+  padding: 0 $content-normal-padding 60px;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}
+
+.dmCartSummary {
+  .sumary-detail {
+    padding: 16px;
+    background-color: $primary-color;
+    width: 100%;
+    @include media-breakpoint-down(sm) {
+      background-color: $white;
+    }
+  }
+
+  .summary-title {
+    color: $primary-bg-color;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 1px solid $primary-bg-color;
+    padding-bottom: 16px;
+    text-align: center;
+  }
+
+  .summary-pay-list {
+    margin-top: 16px;
+  }
+
+  .sub-desc {
+    font-weight: lighter;
+    font-size: 16px;
+    color: $primary-bg-color;
+    @include media-breakpoint-down(sm) {
+      color: $primary-color;
+    }
+  }
+
+  .main-desc {
+    font-size: 20px;
+    font-weight: bold;
+    color: $primary-bg-color;
+    @include media-breakpoint-down(sm) {
+      color: $primary-color;
+    }
+  }
+
+  .checkout-action {
+    background-color: $focus-color;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 24px;
+    color: $primary-color;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
